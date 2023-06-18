@@ -31,6 +31,12 @@ a {
     text-decoration: none
 }
 
+a:hover, a:active {
+    text-decoration: none;
+    color: #fff;
+    background-color: #b96b07;
+  }
+
 .header {
     width: 100%;
     height: var(--header-height);
@@ -220,14 +226,13 @@ header {
     background-color: #802f00;
     border-radius: 50px;
     color: #fff;
-    text-decoration: none;
     margin-right: 10px;
     margin-top: 120px;
 }
 
 #about {
     padding: 20px;
-
+    text-align: center;
 }
 
 #subs {
@@ -305,19 +310,26 @@ form{
     border-radius: 50px;
 }
 
+.mt-5{
+    background-color: var(--first-color);
+    border-radius: 20px;
+    padding: 25px;
+    color: #fff;
+}
+
 .row{
     border: none;
     background-color: var(--first-color);
     color: white;
-    border-radius: 50px
+    border-radius: 20px;
+    padding: 25px;
 }
 
 .input-elm{
     width: 100%;
     height: 45px;
-    border-radius: 25px;
+    border-radius: 15px;
     padding-left: 15px;
-    margin-top: 15px;
     border: none;
     background-color: var(--first-color);
     color: white;
@@ -331,11 +343,11 @@ h2{
 
 .sub-labels{
     width: 100%;
-    height: 100px;
+    height: 60px;
     text-align: center;
     background-image: url(/assets/images/sub-labels.gif);
     background-position: center;
-    padding: 40px;
+    padding: 20px;
     margin-bottom: 30px;
     color: #000000;
     border-radius: 50px
@@ -366,8 +378,7 @@ button {
     padding: 10px 15px;
     border: none;
     cursor: pointer;
-    float: right;
-    margin-bottom: 90px;
+    float: inherit;
 }
 
 button:hover {
@@ -377,7 +388,7 @@ button:hover {
 #order-summary {
     background-color: #802f00;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 20px;
     color: #fff;
 }
 
@@ -392,6 +403,10 @@ button:hover {
 
 #total-cost {
     font-weight: bold;
+}
+#checkout{
+    margin-top: 20px;
+    float: inline-start;
 }
 
 

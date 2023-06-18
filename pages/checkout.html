@@ -5,40 +5,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-      <title>Welcome To SuperSubs</title>
-  
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-  
-        <link rel="stylesheet" href="/assets/css/style.css">
-    <script src="/assets/js/main.js"></script>
+    <title>Welcome To SuperSubs</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Initialize tooltips -->
+    <script>
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script src="/assets/js/checkout.js"></script>
+
   </head>
 
-<body>
-    <body id="body-pd">
+
+<body id="body-pd" onload="displayCheck()">
         <header class="header" id="header">
           <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
-          <div class="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div>
+          <div class="header_img"> <img src="/assets/images/header-imageboard-background.png" alt=""> </div>
         </header>
         
         <div class="l-navbar" id="nav-bar">
           <nav class="nav">
             <div>
               <a href="/index.html" class="nav_logo">
-                <i class='bx bx-grid-alt nav_icon'></i>
+                <box-icon name='home-alt'></box-icon>
                 <span class="nav_logo-name">SuperSubs</span>
               </a>
               <div class="nav_list">
@@ -55,20 +52,43 @@
           </nav>
         </div>
 
-<main id="about">
-    
+<main id="checkoutPage">
+    <div class="checkLeft card">
+        <h1>Your Order</h1>
+        <div id="checkoutOrder">
+            <div class="orderLine card-body">
+                <p><strong>Name:</strong></p>
+                <p><strong>Bread:</strong></p>
+                <p><strong>Cooked:</strong></p>
+                <p><strong>Toppings:</strong></p>
+                <p><strong>Sauce:</strong></p>
+            </div>
+        </div>
+    </div>
+    <div class="checkRight">
+        <h1>Your Total</h1>
+        <h2 id="totalOut" class="total">R0.00</h2>
+
+        <h3>Enter a Promo Code</h3>
+        <input type="text" class="form-control" placeholder="#0000" id="promo">
+        <br>
+        <button class="button" type="button" onclick="addDiscount()">Add Discount</button>  
+
+        <button class="button" type="button" onclick="resetReturn()">Make Payment</button>  
+        <br><br>
+    </div>
 </main>
 <footer>
     <div class="footer-well">
-        <img src="logo.png" alt="Logo">
+        <box-icon name='home-alt'></box-icon>
     </div>
     <div class="footer-well">
         &copy; 2023 Sandwich Website. All rights reserved.
     </div>
     <div class="footer-well">
-        <a href="https://www.facebook.com"><img src="facebook.png" alt="Facebook"></a>
-        <a href="https://www.twitter.com"><img src="twitter.png" alt="Twitter"></a>
-        <a href="https://www.instagram.com"><img src="instagram.png" alt="Instagram"></a>
+        <a href="https://www.facebook.com"><box-icon type='logo' name='facebook'></box-icon></a>
+        <a href="https://www.twitter.com"><box-icon name='twitter' type='logo' ></box-icon></a>
+        <a href="https://www.instagram.com"><box-icon name='instagram-alt' type='logo' ></box-icon></a>
     </div>
 </footer>
 

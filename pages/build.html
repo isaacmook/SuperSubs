@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
 
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Initialize tooltips -->
@@ -20,9 +21,7 @@
         })
     </script>
     <script src="/assets/js/main.js"></script>
-
   </head>
-
 
 <body id="body-pd">
         <header class="header" id="header">
@@ -34,7 +33,7 @@
           <nav class="nav">
             <div>
               <a href="/index.html" class="nav_logo">
-                <i class='bx bx-grid-alt nav_icon'></i>
+                <box-icon name='home-alt'></box-icon>
                 <span class="nav_logo-name">SuperSubs</span>
               </a>
               <div class="nav_list">
@@ -53,7 +52,7 @@
 
     <main class="container">
         <section id="build-sub">
-            <form id="sub-form">
+            <form id="sub-form" onchange="realTimeCost()">
                 <h2>Build Your Sub</h2>
                 <div class="sub">
                     <br><br>
@@ -102,83 +101,83 @@
                     <div id="toppings" class="row">
                         <div class="col-3">
                             <input type="checkbox" id="boerewors" name="toppings" data-cost="0.50" value="Boerewors">
-                            <label for="topping1">Boerewors</label>
+                            <label for="boerewors">Boerewors</label>
                         </div>
                         <div class="col-3">
                             <input type="checkbox" id="biltong" name="toppings" data-cost="0.75" value="Biltong">
-                            <label for="topping2">Biltong</label>
+                            <label for="biltong">Biltong</label>
                         </div>
                         <div class="col-3">
                             <input type="checkbox" id="peri-peri" name="toppings" value="Peri-Peri" data-cost="1.00">
-                            <label for="topping3">Peri-Peri</label>
+                            <label for="peri-peri">Peri-Peri</label>
                         </div>
                         <div class="col-3">
                             <input type="checkbox" id="bobotie" name="toppings" value="Bobotie (spiced mince)" data-cost="0.90">
-                            <label for="topping4">Bobotie (spiced mince)</label>
+                            <label for="bobotie">Bobotie (spiced mince)</label>
                         </div>
                         <div class="col-3">
                             <input type="checkbox" id="chakalaka" name="toppings" value="Chakalaka" data-cost="0.80">
-                            <label for="topping5">Chakalaka</label>
+                            <label for="chakalaka">Chakalaka</label>
                         </div>
                         <div class="col-3">
                             <input type="checkbox" id="pickled-onions" name="toppings" data-value="Pickled onions" data-cost="0.80">
-                            <label for="topping5">Pickled onions</label>
+                            <label for="pickled-onions">Pickled onions</label>
                         </div>
                         <div class="col-3">
                             <input type="checkbox" id="peppadews" name="toppings" value="Peppadews (sweet and spicy pickled peppers)" data-cost="0.80">
-                            <label for="topping5">Peppadews (sweet and spicy pickled peppers)</label>
+                            <label for="peppadews">Peppadews (sweet and spicy pickled peppers)</label>
                         </div>
                         <div class="col-3">
                             <input type="checkbox" id="avo" name="toppings" value="Avo" data-cost="0.80">
-                            <label for="topping5">Avo</label>
+                            <label for="avo">Avo</label>
                         </div>
                         <div class="col-3">
                             <input type="checkbox" id="mielie" name="toppings" value="Mielie" data-cost="0.80">
-                            <label for="topping5">Mielie</label>
+                            <label for="mielie">Mielie</label>
                         </div>
                         <div class="col-3">
                             <input type="checkbox" id="droëwors" name="toppings" value="Droëwors" data-cost="0.80">
-                            <label for="topping5">Droëwors</label>
+                            <label for="droëwors">Droëwors</label>
                         </div>
                         <div class="col-3">
                             <input type="checkbox" id="cheese" name="toppings" value="Cheese" data-cost="0.50">
-                            <label for="topping1">Cheese</label>
+                            <label for="cheese">Cheese</label>
                         </div>
                         <div class="col-3">
                             <input type="checkbox" id="lettuce" name="toppings" value="Lettuce" data-cost="0.75">
-                            <label for="topping2">Lettuce</label>
+                            <label for="lettuce">Lettuce</label>
                         </div>
                         <div class="col-3">
                             <input type="checkbox" id="tomatoe-slices" name="toppings" value="Tomato slices" data-cost="1.00">
-                            <label for="topping3">Tomato slices</label>
+                            <label for="tomatoe-slices">Tomato slices</label>
                         </div>
                         <div class="col-3">
                             <input type="checkbox" id="tuna" name="toppings" value="Tuna" data-cost="0.90">
-                            <label for="topping4">Tuna</label>
+                            <label for="tuna">Tuna</label>
                         </div>
                         <div class="col-3">
                             <input type="checkbox" id="cucumber-slices" name="toppings" value="Cucumber slices" data-cost="0.80">
-                            <label for="topping5">Cucumber slices</label>
+                            <label for="cucumber-slices">Cucumber slices</label>
                         </div>
                         <div class="col-3">
                             <input type="checkbox" id="red-onion-slices" name="toppings" value="Red onion slices" data-cost="0.80">
-                            <label for="topping5">Red onion slices</label>
+                            <label for="red-onion-slices">Red onion slices</label>
                         </div>
                         <div class="col-3">
                             <input type="checkbox" id="beetroot-slices" name="toppings" value="Beetroot slices" data-cost="0.80">
-                            <label for="topping5">Beetroot slices</label>
+                            <label for="beetroot-slices">Beetroot slices</label>
                         </div>
                         <div class="col-3">
                             <input type="checkbox" id="grated-carrot" name="toppings" value="Grated carrot" data-cost="0.80">
-                            <label for="topping5">Grated carrot</label>
+                            <label for="grated-carrot">Grated carrot</label>
                         </div>
                         <div class="col-3">
                             <input type="checkbox" id="green-peper-rings" name="toppings" value="Green pepper rings" data-cost="0.80">
-                            <label for="topping5">Green pepper rings</label>
+                            <label for="green-peper-rings">Green pepper rings</label>
                         </div>
                         <div class="col-3">
-                            <input type="checkbox" id="spinah-leaves" name="toppings" value="Spinach leaves" data-cost="0.80">
-                            <label for="topping5">Spinach leaves</label>
+                            <input type="checkbox" id="spinach-leaves" name="toppings" value="Spinach leaves" data-cost="0.80">
+                            <label for="spinach-leaves">Spinach leaves</label>
                         </div>
 
                     </div>
@@ -187,33 +186,35 @@
                     <div id="sauces" class="row">
                         <div class="col-2">
                             <input type="checkbox" id="tomato-sauce" name="sauce" data-cost="0.25" value="Tomato Sauce">
-                            <label for="sauce1">Tomato Sauce</label>
+                            <label for="tomato-sauce">Tomato Sauce</label>
                         </div>
                         <div class="col-2">
                             <input type="checkbox" id="sweet-chilli-sauce" name="sauce" data-cost="0.30" value="Sweet Chili Sauce">
-                            <label for="sauce2">Sweet Chili Sauce</label>
+                            <label for="sweet-chilli-sauce">Sweet Chili Sauce</label>
                         </div>
                         <div class="col-2">
                             <input type="checkbox" id="mayo" name="sauce" data-cost="0.35" value="Mayo">
-                            <label for="sauce3">Mayo</label>
+                            <label for="mayo">Mayo</label>
                         </div>
                         <div class="col-2">
                             <input type="checkbox" id="peri-peri-sauce" name="sauce" data-cost="0.40" value="Peri-Peri Sauce">
-                            <label for="sauce4">Peri-Peri Sauce</label>
+                            <label for="peri-peri-sauce">Peri-Peri Sauce</label>
                         </div>
                         <div class="col-2">
                             <input type="checkbox" id="bbq-sauce" name="sauce" data-cost="0.45" value="BBQ Sauce">
-                            <label for="sauce5">BBQ Sauce</label>
+                            <label for="bbq-sauce">BBQ Sauce</label>
                         </div>
                     </div>
                     <br>
                     <button type="button" id="add-sub" onclick="addSub(); displayOrder()">Add Sub</button>
                 </div>
                 <div id="order-summary">
-                    <h3>Order Summary:</h3>
-                    <div id="col-3"></div>
+                    <div class="col-3">
+                        <h3>Order Summary:</h3>
                     <p>Total Cost: <span id="total-cost">R0.00</span></p>
+                    </div>
                 </div>
+                <a href="/pages/checkout.html"><button type="button" id="checkout" onclick="">Checkout</button></a>
             </form>
         </section>
 
@@ -223,19 +224,22 @@
 
     <footer>
         <div class="footer-well">
-            <img src="logo.png" alt="Logo">
+            <box-icon name='home-alt'></box-icon>
         </div>
         <div class="footer-well">
             &copy; 2023 Sandwich Website. All rights reserved.
         </div>
         <div class="footer-well">
-            <a href="https://www.facebook.com"><img src="facebook.png" alt="Facebook"></a>
-            <a href="https://www.twitter.com"><img src="twitter.png" alt="Twitter"></a>
-            <a href="https://www.instagram.com"><img src="instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com"><box-icon type='logo' name='facebook'></box-icon></a>
+            <a href="https://www.twitter.com"><box-icon name='twitter' type='logo' ></box-icon></a>
+            <a href="https://www.instagram.com"><box-icon name='instagram-alt' type='logo' ></box-icon></a>
         </div>
     </footer>
 
+<script>
 
+
+</script>
 
 </body>
 

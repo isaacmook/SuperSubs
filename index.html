@@ -5,25 +5,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
-    <title>Welcome To SuperSubs</title>
+  <title>Welcome To SuperSubs</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
 
-      <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Initialize tooltips -->
+  <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+  </script>
   <script src="/assets/js/main.js"></script>
 </head>
 
@@ -37,7 +33,7 @@
     <nav class="nav">
       <div>
         <a href="/index.html" class="nav_logo">
-          <i class='bx bx-grid-alt nav_icon'></i>
+          <box-icon name='home-alt'></box-icon>
           <span class="nav_logo-name">SuperSubs</span>
         </a>
         <div class="nav_list">
@@ -49,7 +45,7 @@
             <span class="nav_name">About Us</span>
           </a>
         </div>
-      </div> <a href="#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">Sign Out</span>
+      </div> <a href="#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span>
       </a>
     </nav>
   </div>
@@ -58,7 +54,7 @@
     <!-- Home page content -->
     <section id="home">
       <div class="header-image">
-        <a href="/pages/build.html" class="button">Build A Sub</a>
+        <a href="/pages/build.html" class="button" target="_blank">Build A Sub</a>
         <a href="#about" class="button">About Us</a>
       </div>
     </section>
@@ -76,22 +72,22 @@
           <div class="carousel-item active">
             <img class="d-block w-100" src="/assets/images/sub1.jpg" alt="Sub 1">
             <div class="carousel-caption">
-              <h3>Sub 1</h3>
-              <p>Description of Sub 1</p>
+              <h3>SUBMISSION</h3>
+              <p>Meaty pinapple blend, filled with flavour.</p>
             </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="/assets/images/sub7.jpg" alt="Sub 2">
             <div class="carousel-caption">
-              <h3>Sub 2</h3>
-              <p>Description of Sub 2</p>
+              <h3>Virgin Eater</h3>
+              <p>For the rabbit food lovers who don't mind braking the rules a bit.</p>
             </div>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="/assets/images/sub4.jpg" alt="Sub 3">
             <div class="carousel-caption">
-              <h3>Sub 3</h3>
-              <p>Description of Sub 3</p>
+              <h3>Real South African</h3>
+              <p>LAST NUMBER!</p>
             </div>
           </div>
         </div>
@@ -109,23 +105,41 @@
     <!-- About Us section -->
     <section id="about">
       <h2>About Us</h2>
-      <p>Here is some information about our sandwich website and how to use it.</p>
+      <p>Welcome to SuperSubs, your ultimate destination for delicious and customizable Subway sandwiches! We take pride in providing you with a wide variety of freshly made subs crafted with the finest ingredients. Whether you're craving a classic favorite or looking to create your own unique masterpiece, SuperSubs has got you covered.
+        <br>
+        <br>
+        At SuperSubs, we understand that every individual has unique tastes and preferences. That's why we offer an extensive selection of bread, toppings, sauces, and fillings to suit your personal preferences. From the soft and fluffy White Bread to the hearty and wholesome Whole Wheat Bread, our bread options cater to diverse dietary needs and preferences.
+        <br>
+        <br>
+        Customization is at the heart of SuperSubs. We believe that you deserve the freedom to build your sub exactly the way you like it. Choose from a range of delectable fillings and toppings, including mouthwatering Boerewors, succulent Biltong, flavorful Peri-Peri, aromatic Bobotie (spiced mince), zesty Chakalaka, tangy Pickled onions, and much more. Enhance your sub with a variety of sauces such as Tomato Sauce, Sweet Chili Sauce, Mayo, Peri-Peri Sauce, and BBQ Sauce, adding that perfect finishing touch to your creation.
+        <br>
+        <br>
+        We prioritize quality and freshness in every bite. Our ingredients are sourced from trusted suppliers to ensure the highest standards of taste and nutrition. Whether you're a meat lover, a vegetarian, or have specific dietary requirements, SuperSubs offers a range of options to cater to all.
+        <br>
+        <br>
+        Not only do we focus on creating delicious subs, but we also strive to provide a seamless and enjoyable ordering experience. Our user-friendly online ordering system allows you to customize your sub, visualize your choices in real-time, and conveniently place your order. With our efficient service, you can expect your sub to be prepared with care and delivered to you promptly, ensuring a satisfying and delightful meal.
+        <br>
+        <br>
+        At SuperSubs, we value your satisfaction and aim to exceed your expectations with every visit. Our commitment to quality, customization, and convenience sets us apart as the go-to destination for sandwich lovers. Join us on this flavorful journey and experience the joy of creating your perfect sub at SuperSubs.
+        <br>
+        <br>
+        Thank you for choosing SuperSubs, where every bite is a taste sensation and every sub is made with passion!</p>
     </section>
   </main>
 
   <footer>
     <div class="footer-well">
-      <img src="logo.png" alt="Logo">
+        <box-icon name='home-alt'></box-icon>
     </div>
     <div class="footer-well">
-      &copy; 2023 Sandwich Website. All rights reserved.
+        &copy; 2023 Sandwich Website. All rights reserved.
     </div>
     <div class="footer-well">
-      <a href="https://www.facebook.com"><img src="facebook.png" alt="Facebook"></a>
-      <a href="https://www.twitter.com"><img src="twitter.png" alt="Twitter"></a>
-      <a href="https://www.instagram.com"><img src="instagram.png" alt="Instagram"></a>
+        <a href="https://www.facebook.com"><box-icon type='logo' name='facebook'></box-icon></a>
+        <a href="https://www.twitter.com"><box-icon name='twitter' type='logo' ></box-icon></a>
+        <a href="https://www.instagram.com"><box-icon name='instagram-alt' type='logo' ></box-icon></a>
     </div>
-  </footer>
+</footer>
 
 </body>
 
